@@ -122,7 +122,7 @@ export const CONTACTS = [
     title: "Jakarta",
     email: "tropify@gmail.com",
     phone: "0987 654 321",
-    note: null,
+    note: "",
   },
   {
     title: "Ho Chi Minh City",

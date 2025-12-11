@@ -96,10 +96,10 @@ const Header: React.FC = () => {
     <header className="relative">
       {/* Main Header */}
       <div
-        className="fixed top-3 left-0 w-full h-[68px] z-50 flex items-center justify-center overflow-hidden"
+        className={`fixed top-0 md:top-3 left-0 w-full h-[68px] z-50 flex items-center justify-center overflow-hidden duration-300 ease-in-out ${isOpen || isScrolled ? "max-md:bg-olive" : ""}`}
       >
         <div className="container">
-          <div className={`flex items-center justify-between py-3 px-6 duration-500 ease-in-out rounded-full ${isScrolled ? "bg-olive" : ""}`}>
+          <div className={`flex items-center justify-between py-3 md:px-6 duration-500 ease-in-out rounded-full ${isScrolled ? "md:bg-olive" : ""}`}>
             {/* Logo */}
             <AnimateOnScroll
               animate="slideleft"
@@ -161,15 +161,13 @@ const Header: React.FC = () => {
             {/* Mobile Menu Button */}
             <div className="lg:hidden">
               <button
-                className="btn btn-primary !min-w-11 !h-10"
+                className="text-white"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label={isOpen ? "Close mobile menu" : "Open mobile menu"}
                 aria-expanded={isOpen}
                 aria-controls="mobile-menu"
               >
-                <span className="inner">
                   <Hamburger />
-                </span>
               </button>
             </div>
           </div>
@@ -188,7 +186,7 @@ const Header: React.FC = () => {
       {/* Mobile Navigation Menu */}
       <div
         id="mobile-menu"
-        className={`lg:hidden fixed top-20 w-full md:w-[320px] h-[calc(100dvh-80px)] bg-black text-white px-4 md:px-6 py-10 z-40 duration-300 ease-in-out ${
+        className={`lg:hidden fixed top-[68px] w-full md:w-[320px] h-[calc(100dvh-68px)] bg-olive text-white px-4 md:px-6 py-10 z-40 duration-300 ease-in-out ${
           isOpen ? "right-0" : "-right-full"
         }`}
         role="dialog"
@@ -198,15 +196,15 @@ const Header: React.FC = () => {
           {/* Mobile Menu Items */}
           <nav role="navigation" aria-label="Mobile navigation">
             <ul
-              className="space-y-4 title-3"
+              className="space-y-4 label-1 font-semibold"
               role="menubar"
             >
               {menus.map((menu, index) => (
                 <li
                   key={`mobile-menu-${index}`}
                   onClick={() => scrollToSection(menu.id)}
-                  className={`py-4 cursor-pointer ${
-                    activeSection === menu.id ? "text-primary" : "text-white/50"
+                  className={`py-3 cursor-pointer ${
+                    activeSection === menu.id ? "text-white" : "text-white/50"
                   }`}
                   role="menuitem"
                   tabIndex={isOpen ? 0 : -1}

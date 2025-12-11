@@ -62,15 +62,15 @@ const SectionHero: React.FC<SectionHeroProps> = ({ items }) => {
         ))}
       </Swiper>
 
-      <div className="absolute z-10 bottom-0 left-0 w-full p-6">
+      <div className="absolute z-10 bottom-0 left-0 w-full md:p-6 pb-3">
         <div className="container">
-          <div className="flex gap-6 w-max relative">
-            <div className="absolute w-full h-px left-0 bottom-0 bg-white/20"></div>
+          <div className="flex md:flex-row flex-col gap-2 md:gap-6 w-max relative max-md:mx-auto">
+            <div className="absolute w-full h-px left-0 bottom-0 bg-white/20 md:block hidden"></div>
             {items.map((itemPaginate, idxPaginate) => (
               <button
                 key={idxPaginate}
                 onClick={() => goToSlide(idxPaginate)}
-                className={`label-0 font-medium uppercase pb-3 border-b-2 cursor-pointer transition-all duration-300 ease-in-out ${
+                className={`label-0 max-md:text-[14px] font-medium uppercase pb-1 md:pb-3 border-b-2 cursor-pointer transition-all duration-300 ease-in-out ${
                   activeIndex === idxPaginate
                     ? "border-white text-white"
                     : "border-transparent text-white/60 lg:hover:text-white/80 duration-300 ease-in-out"

@@ -3,7 +3,7 @@ import Arrow from "../icons/Arrow";
 
 interface ServiceCardProps {
   item: {
-    image?: {
+    image: {
       url: string;
       alt?: string;
     };

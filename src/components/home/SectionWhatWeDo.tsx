@@ -19,7 +19,7 @@ type WhatWeDoItem = {
 };
 
 type ServiceItem = {
-  image?: {
+  image: {
     url: string;
     alt?: string;
   };
@@ -42,11 +42,11 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
       className="relative py-12 md:py-16 xl:py-[100px] bg-beige"
     >
       <div className="container">
-        <div className="px-[75px] space-y-[100px]">
-          <div className="space-y-8">
+        <div className="md:px-[75px] md:space-y-20 space-y-16 xl:space-y-[100px]">
+          <div className="md:space-y-6 space-y-4 xl:space-y-8">
             <div className="space-y-6">
               <div className="headline-3 text-brown uppercase">Services</div>
-              <div className="flex items-start gap-8">
+              <div className="flex md:flex-row flex-col items-start gap-4 md:gap-8">
                 <div className="max-w-[480px] w-full">
                   <h2 className="display-2 font-bold text-brown">
                     Sourcing & tropical <br /> Commodies trading
@@ -105,7 +105,7 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
             <div className="headline-3 text-brown uppercase">
               Other Services
             </div>
-            <div className="space-y-8">
+            <div className="md:space-y-6 space-y-4 xl:space-y-8">
               {services.map((itemService, indexService) => (
                 <CardService key={indexService} item={itemService} />
               ))}
