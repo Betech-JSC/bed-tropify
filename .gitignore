@@ -1,0 +1,8 @@
+# Next.js build output
+.next/
+
+# MacOS system file
+.DS_Store
+
+# Node modules (nên ignore luôn)
+node_modules/

@@ -1,0 +1,66 @@
+import { CardNetwork } from "../cards/CardNetwork";
+
+type NetworkItem = {
+  number?: string;
+  headerSymbol?: string;
+  footerSymbol?: string;
+  title?: string;
+};
+
+type NetworkCardItem = {
+  image?: {
+    url?: string;
+    alt?: string;
+  }
+  icon?: any;
+  title?: string;
+  description?: string;
+};
+
+type SectionNetworkProps = {
+  items: NetworkItem[];
+  cards: NetworkCardItem[];
+};
+
+const SectionNetwork: React.FC<SectionNetworkProps> = ({ items, cards }) => {
+  return (
+    <section className="py-[120px] bg-white">
+      <div className="container">
+        <div className="px-[72px] flex items-start justify-between">
+          <div className="self-start min-w-60 w-[460px] max-md:max-w-full space-y-16">
+            <h2 className="display-2 font-bold text-brown">
+              A network of local experts to support your business.
+            </h2>
+            <div className="flex gap-8 items-start w-full max-md:max-w-full">
+              {items.map((itemNetwork, indexNetwork) => {
+                return (
+                  <div
+                    key={indexNetwork}
+                    className={`space-y-4 ${
+                      indexNetwork === 0 ? "w-[226px]" : "flex-1 shrink basis-0"
+                    }`}
+                  >
+                    <div className="display-1 font-bold text-orange-400">
+                      {itemNetwork.number}
+                      {itemNetwork.footerSymbol}
+                    </div>
+                    <p className="title-3 font-medium text-gray-700 uppercase">
+                      {itemNetwork.title}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="flex flex-wrap gap-6 items-start h-full bg-white min-w-60 max-md:max-w-full">
+            {cards.map((itemCard, indexCard) => {
+              return <CardNetwork key={indexCard} item={itemCard} />;
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SectionNetwork;

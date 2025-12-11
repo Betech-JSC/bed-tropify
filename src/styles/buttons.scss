@@ -1,0 +1,16 @@
+.btn {
+  @apply relative h-11 flex items-center justify-center duration-300 ease-in-out cursor-pointer px-[18px] py-2.5 rounded-full;
+  @apply text-[16px] leading-[150%] tracking-[0.02em] font-sans font-medium uppercase;
+}
+
+.btn-primary {
+  @apply bg-orange text-white lg:hover:bg-olive focus:bg-olive;
+}
+
+.btn-secondary {
+  @apply bg-olive text-white lg:hover:bg-orange focus:bg-orange;
+}
+
+.btn-pagination {
+  @apply absolute z-10 top-[113px] size-11 rounded-full flex items-center justify-center bg-white text-olive lg:hover:bg-olive lg:hover:text-white cursor-pointer duration-300 ease-in-out;
+}

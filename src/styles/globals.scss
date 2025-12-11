@@ -1,0 +1,27 @@
+@use "tailwindcss";
+@use "./buttons.scss";
+@use "./cards.scss";
+@use "./fonts.scss";
+@use "./type.scss";
+@use "./input.scss";
+@use "./animations.scss";
+
+@config "../../tailwind.config.ts";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/aspect-ratio";
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-linear-white {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.bg-linear-olive {
+  background: linear-gradient(360deg, rgba(77, 87, 37, 0.5) 0%, #4D5725 100%);
+}

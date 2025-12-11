@@ -1,0 +1,17 @@
+{
+  "demo": {
+    "title": "Hướng dẫn Style",
+    "typography": "Kiểu chữ",
+    "colors": "Màu sắc",
+    "buttons": "Nút bấm",
+    "gradients": "Gradient"
+  },
+  "header": {
+    "about": "Về bản thân",
+    "field": "Lĩnh vực",
+    "project": "Dự án",
+    "experience": "Kinh nghiệm",
+    "contact": "Liên hệ",
+    "resume": "Xem profile"
+  }
+}
