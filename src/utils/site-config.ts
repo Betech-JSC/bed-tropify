@@ -1,7 +1,7 @@
 import type { LocalePrefixMode } from "next-intl/routing";
 
 const localePrefix: LocalePrefixMode = "as-needed";
-const baseUrl = null;
+const baseUrl = "https://bed-tropify.onrender.com";
 
 
 export const siteConfig = {
