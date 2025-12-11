@@ -14,8 +14,8 @@ interface ServiceCardProps {
 
 export function CardService({ item }: ServiceCardProps) {
   return (
-    <div className="flex flex-wrap gap-8 items-start group">
-      <div className="shrink-0 rounded-xl max-w-[200px] w-full relative overflow-hidden">
+    <div className="flex flex-col md:flex-row md:flex-wrap gap-3 md:gap-8 items-start group">
+      <div className="shrink-0 rounded-xl md:max-w-[200px] w-full relative overflow-hidden">
         <div className="aspect-w-7 aspect-h-5">
           <Image
             src={item.image?.url}
@@ -25,8 +25,8 @@ export function CardService({ item }: ServiceCardProps) {
           />
         </div>
       </div>
-      <div className="flex flex-wrap flex-1 shrink gap-8 items-start basis-0 min-w-60 max-md:max-w-full">
-        <div className="display-3 font-bold text-brown max-w-[420px] w-full">
+      <div className="flex flex-wrap flex-1 shrink gap-3 md:gap-8 items-start basis-0 min-w-60 max-md:max-w-full">
+        <div className="display-3 font-bold text-brown md:max-w-[420px] w-full">
           {item.title}
         </div>
 

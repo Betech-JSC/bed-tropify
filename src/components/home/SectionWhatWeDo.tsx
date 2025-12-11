@@ -67,18 +67,6 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
             </div>
 
             <div className="relative">
-              <button
-                className="btn-custom-prev btn-pagination -left-16"
-                aria-label="button-slider-prev"
-              >
-                <Chevron />
-              </button>
-              <button
-                className="btn-custom-next btn-pagination -right-16 rotate-180"
-                aria-label="button-slider-next"
-              >
-                <Chevron />
-              </button>
               <Swiper
                 modules={[Navigation, Autoplay]}
                 navigation={{
@@ -92,6 +80,20 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
                   delay: 4000,
                   disableOnInteraction: false,
                 }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  480: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 24,
+                  },
+                }}
               >
                 {items.map((item, idx) => (
                   <SwiperSlide key={idx}>
@@ -99,13 +101,25 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
                   </SwiperSlide>
                 ))}
               </Swiper>
+              <button
+                className="btn-custom-prev btn-pagination -left-3 md:-left-16"
+                aria-label="button-slider-prev"
+              >
+                <Chevron />
+              </button>
+              <button
+                className="btn-custom-next btn-pagination -right-3 md:-right-16 rotate-180"
+                aria-label="button-slider-next"
+              >
+                <Chevron />
+              </button>
             </div>
           </div>
-          <div className="space-y-6">
+          <div className="space-y-3 md:space-y-6">
             <div className="headline-3 text-brown uppercase">
               Other Services
             </div>
-            <div className="md:space-y-6 space-y-4 xl:space-y-8">
+            <div className="md:space-y-6 space-y-8 xl:space-y-8">
               {services.map((itemService, indexService) => (
                 <CardService key={indexService} item={itemService} />
               ))}

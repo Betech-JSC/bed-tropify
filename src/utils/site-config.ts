@@ -1,19 +1,19 @@
 import type { LocalePrefixMode } from "next-intl/routing";
 
 const localePrefix: LocalePrefixMode = "as-needed";
-const baseUrl = "https://project-thanhcao-frontend.vercel.app";
+const baseUrl = null;
 
 
 export const siteConfig = {
   title: {
-    vi: "ThanhCao Portfolio - Frontend Developer",
-    en: "ThanhCao Portfolio - Frontend Developer",    
+    vi: "Tropify là một thương hiệu nông sản hữu cơ",
+    en: "Tropify is an organic agricultural brand",    
   },
   description: {
-    vi: "Cao Trung Thanh - Frontend Developer chuyên nghiệp tại Việt Nam. Xây dựng website hiện đại, hiệu suất cao sử dụng React, Vue, Next.js và Nuxt.js. Khám phá portfolio 2025 của tôi.",
-    en: "Cao Trung Thanh - Professional Frontend Developer based in Vietnam. Building modern, high-performance websites using React, Vue, Next.js, and Nuxt.js. Explore my 2025 portfolio.",
+    vi: "Tropify là một thương hiệu nông sản hữu cơ từ vùng Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, chuyển thẳng từ nông trại đến tay người tiêu dùng để đảm bảo chất lượng tốt nhất, với mục tiêu mang đến sự tươi mới và chất lượng vượt trội.",
+    en: "Tropify is an organic agricultural brand from the Andalusia region of Spain, focused on providing fresh, sustainably grown fruits delivered straight from the farm to consumers to ensure the highest quality, with the goal of bringing exceptional freshness and superior quality.",
   },
-  siteName: "Portfolio",
+  siteName: "Tropify",
   url: baseUrl || process.env.NEXT_PUBLIC_BASE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
   baseUrl: baseUrl || process.env.NEXT_PUBLIC_BASE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
   apiEndpoint: process.env.NEXT_PUBLIC_API_URL,
@@ -21,16 +21,9 @@ export const siteConfig = {
   ogImage: "/cover.jpg",
   twitterHandle: "",
   defaultKeywords: [
-    "ThanhCao Portfolio",
-    "Thanh Cao Frontend Developer",
-    "Cao Trung Thanh Developer",
-    "Frontend Developer Vietnam",
-    "Web Developer Portfolio 2025",
-    "React Developer Portfolio",
-    "Vue Developer Portfolio",
-    "Freelance Web Developer",
-    "Personal Portfolio Website",
-    "Frontend Developer React / Vue",
+    "Tropify",
+    "Tropify is an organic agricultural",
+    "Tropify organic"
   ],
   keywords: [],
   locales: ["en", "vi"],
@@ -39,32 +32,32 @@ export const siteConfig = {
   pages: {
     home: {
       title: {
-        vi: "Trang chủ - Portfolio Cao Trung Thanh",
-        en: "Home - Cao Trung Thanh Portfolio",
+        vi: "Trang chủ - Tropify",
+        en: "Home - Tropify",
       },
       description: {
-        vi: "Trang chủ portfolio của Cao Trung Thanh - Frontend Developer chuyên nghiệp. Khám phá các dự án, dịch vụ và kinh nghiệm phát triển web.",
-        en: "Homepage of Cao Trung Thanh's portfolio - Professional Frontend Developer. Explore projects, services and web development experience.",
+        vi: "Tropify là một thương hiệu nông sản hữu cơ từ vùng Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, chuyển thẳng từ nông trại đến tay người tiêu dùng để đảm bảo chất lượng tốt nhất, với mục tiêu mang đến sự tươi mới và chất lượng vượt trội.",
+        en: "Tropify is an organic agricultural brand from the Andalusia region of Spain, focused on providing fresh, sustainably grown fruits delivered straight from the farm to consumers to ensure the highest quality, with the goal of bringing exceptional freshness and superior quality.",
       },
     },
     about: {
       title: {
-        vi: "Giới thiệu - Cao Trung Thanh",
-        en: "About - Cao Trung Thanh",
+        vi: "Giới thiệu - Tropify",
+        en: "About - Tropify",
       },
       description: {
-        vi: "Tìm hiểu về Cao Trung Thanh - Frontend Developer với 4+ năm kinh nghiệm trong phát triển web hiện đại.",
-        en: "Learn about Cao Trung Thanh - Frontend Developer with 4+ years of experience in modern web development.",
+        vi: "Tropify là một thương hiệu nông sản hữu cơ từ vùng Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, chuyển thẳng từ nông trại đến tay người tiêu dùng để đảm bảo chất lượng tốt nhất, với mục tiêu mang đến sự tươi mới và chất lượng vượt trội.",
+        en: "Tropify is an organic agricultural brand from the Andalusia region of Spain, focused on providing fresh, sustainably grown fruits delivered straight from the farm to consumers to ensure the highest quality, with the goal of bringing exceptional freshness and superior quality.",
       },
     },
     demo: {
       title: {
-        vi: "Demo - Cao Trung Thanh",
-        en: "Demo - Cao Trung Thanh",
+        vi: "Demo - Tropify",
+        en: "Demo - Tropify",
       },
       description: {
-        vi: "Xem các demo và ví dụ về công nghệ mà Cao Trung Thanh sử dụng trong phát triển web.",
-        en: "View demos and examples of technologies that Cao Trung Thanh uses in web development.",
+        vi: "Tropify là một thương hiệu nông sản hữu cơ từ vùng Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, chuyển thẳng từ nông trại đến tay người tiêu dùng để đảm bảo chất lượng tốt nhất, với mục tiêu mang đến sự tươi mới và chất lượng vượt trội.",
+        en: "Tropify is an organic agricultural brand from the Andalusia region of Spain, focused on providing fresh, sustainably grown fruits delivered straight from the farm to consumers to ensure the highest quality, with the goal of bringing exceptional freshness and superior quality.",
       },
     },
   },

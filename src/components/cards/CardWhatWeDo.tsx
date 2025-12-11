@@ -53,8 +53,8 @@ export function CardWhatWeDo({
           />
         </div>
       )}
-      <div className="px-4 py-6 flex flex-col justify-between space-y-6 h-[324px]">
-        <div className="space-y-6">
+      <div className="px-4 py-3 md:py-6 flex flex-col justify-between space-y-3 md:space-y-6 h-[324px]">
+        <div className="space-y-3 md:space-y-6">
           <h3 className="headline-3 font-bold text-brown line-clamp-2 uppercase">
             {item.title}
           </h3>

@@ -26,10 +26,10 @@ const SectionContact: React.FC<SectionWhatWeDoProps> = ({ items }) => {
         />
       </div>
       <div className="absolute inset-0 bg-linear-white w-full h-full"></div>
-      <div className="relative pb-[85px] pt-[110px]">
+      <div className="relative pb-6 md:pb-[85px] pt-5 md:pt-[110px]">
         <div className="container">
-          <div className="max-w-[904px] w-full mx-auto bg-white/70 rounded-xl overflow-hidden relative p-8 flex items-start gap-[120px]">
-            <div className="max-w-[324px] w-full space-y-8">
+          <div className="max-w-[904px] w-full mx-auto bg-white/70 rounded-xl overflow-hidden relative p-4 md:p-6 xl:p-8 flex md:flex-row flex-col items-start gap-6 md:gap-[120px]">
+            <div className="max-w-[324px] w-full space-y-4 md:space-y-6 xl:space-y-8">
               <h2 className="display-2 font-bold text-brown">
                 Contact Information
               </h2>

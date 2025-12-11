@@ -4,11 +4,11 @@ const SectionBooking: React.FC = () => {
   return (
     <section
       id="section-about-us"
-      className="relative pt-[100px] pb-[80px] bg-white"
+      className="relative pt-16 md:pt-20 xl:pt-[100px] pb-12 md:pb-16 xl:pb-20 bg-white"
     >
       <div className="container">
-        <div className="px-[75px] flex items-center gap-16">
-          <div className="max-w-[380px] w-full">
+        <div className="md:px-[75px] flex flex-col md:flex-row items-center gap-8 md:gap-16">
+          <div className="md:max-w-[380px] w-full">
             <Logo width={108} height={52} />
             <h2 className="display-2 font-bold text-brown mt-3 mb-6">
               Sourcing from Southeast Asia made easy
