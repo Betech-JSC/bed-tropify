@@ -10,7 +10,7 @@ import { CardWhatWeDo } from "../cards/CardWhatWeDo";
 import { CardService } from "../cards/CardService";
 
 type WhatWeDoItem = {
-  image?: {
+  image: {
     url: string;
     alt?: string;
   };
