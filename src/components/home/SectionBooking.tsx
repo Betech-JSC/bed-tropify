@@ -1,4 +1,6 @@
+"use client";
 import Logo from "../logo";
+import { scrollToContact } from "@/lib/scrollToSection";
 
 const SectionBooking: React.FC = () => {
   return (
@@ -13,7 +15,7 @@ const SectionBooking: React.FC = () => {
             <h2 className="display-2 font-bold text-brown mt-3 mb-6">
               Sourcing from Southeast Asia made easy
             </h2>
-            <button className="btn btn-secondary">Book a call with us</button>
+            <button className="btn btn-secondary" onClick={() => scrollToContact()}>Book a call with us</button>
           </div>
           <div className="flex-1 w-full body-1 text-gray-900 space-y-3">
             <p>Tropify believes in bridging and optimizing connections.</p>

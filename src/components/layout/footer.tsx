@@ -1,6 +1,9 @@
-import { title } from "process";
+"use client";
+
 import Logo from "../logo";
 import Link from "next/link";
+import { scrollToContact } from "@/lib/scrollToSection";
+
 
 const Footer: React.FC = () => {
   const servicesFooter = [
@@ -48,7 +51,7 @@ const Footer: React.FC = () => {
                       <li>Who we are</li>
                     </ul>
                   </div>
-                  <button className="btn btn-primary max-md:w-full">Contact us</button>
+                  <button className="btn btn-primary max-md:w-full" onClick={() => scrollToContact()}>Contact us</button>
                 </div>
               </div>
             </div>

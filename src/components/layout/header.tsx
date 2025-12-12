@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-// import { useTranslations } from "next-intl";
 import Hamburger from "../icons/Hambuger";
 import { Link } from "@/i18n/i18n-navigation";
 import gsap from "gsap";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import AnimateOnScroll from "../animated/animated-appear";
 import Logo from "../logo";
+import { scrollToSection } from "@/lib/scrollToSection"; // Import hàm
 
 gsap.registerPlugin(ScrollToPlugin);
 
@@ -21,7 +21,6 @@ const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>("");
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Use useMemo to prevent recreation on every render
   const menus = React.useMemo<MenuItem[]>(
     () => [
       { title: "Home", id: "section-home" },
@@ -32,13 +31,11 @@ const Header: React.FC = () => {
     []
   );
 
-  // Toggle body scroll lock
   useEffect(() => {
     document.body.classList.toggle("overflow-hidden", isOpen);
     return () => document.body.classList.remove("overflow-hidden");
   }, [isOpen]);
 
-  // Close on ESC
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === "Escape" && isOpen) setIsOpen(false);
@@ -47,12 +44,9 @@ const Header: React.FC = () => {
     return () => document.removeEventListener("keydown", handleEscape);
   }, [isOpen]);
 
-  // ScrollSpy: highlight section khi scroll và detect scroll position
   useEffect(() => {
     const handleScroll = () => {
       const scrollPos = window.scrollY + 120;
-      
-      // Detect if scrolled down (thêm background sau khi scroll > 50px)
       setIsScrolled(window.scrollY > 50);
       
       let currentSection = "";
@@ -78,18 +72,14 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [activeSection, menus]);
 
-  // Scroll to section bằng GSAP
-  const scrollToSection = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      gsap.to(window, {
-        duration: 0.3,
-        scrollTo: { y: el, offsetY: 90 },
-        ease: "power1.inOut",
-      });
-      setActiveSection(id);
-      setIsOpen(false);
-    }
+  // Wrapper function để handle state updates
+  const handleScrollToSection = (id: string) => {
+    scrollToSection(id, {
+      onComplete: () => {
+        setActiveSection(id);
+        setIsOpen(false);
+      }
+    });
   };
 
   return (
@@ -100,7 +90,6 @@ const Header: React.FC = () => {
       >
         <div className="container">
           <div className={`flex items-center justify-between py-3 md:px-6 duration-500 ease-in-out rounded-full ${isScrolled ? "md:bg-olive" : ""}`}>
-            {/* Logo */}
             <AnimateOnScroll
               animate="slideleft"
               className="block max-w-[105px] w-full h-11"
@@ -114,7 +103,6 @@ const Header: React.FC = () => {
               </Link>
             </AnimateOnScroll>
 
-            {/* Desktop Navigation */}
             <nav
               className="hidden lg:flex items-center gap-4 md:gap-6 xl:gap-8"
               role="navigation"
@@ -132,13 +120,13 @@ const Header: React.FC = () => {
                         ? "text-brown bg-beige"
                         : "text-white lg:hover:text-brown lg:hover:bg-beige"
                     } duration-300 ease-in-out`}
-                    onClick={() => scrollToSection(menu.id)}
+                    onClick={() => handleScrollToSection(menu.id)}
                     role="menuitem"
                     tabIndex={0}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
                         e.preventDefault();
-                        scrollToSection(menu.id);
+                        handleScrollToSection(menu.id);
                       }
                     }}
                     aria-current={
@@ -151,14 +139,17 @@ const Header: React.FC = () => {
               </ul>
             </nav>
 
-            {/* Desktop Contact Button */}
             <div className="hidden lg:block">
               <AnimateOnScroll animate="slideright">
-                <button className="btn btn-primary">Contact Us</button>
+                <button 
+                  className="btn btn-primary"
+                  onClick={() => handleScrollToSection("section-contact")}
+                >
+                  Contact Us
+                </button>
               </AnimateOnScroll>
             </div>
 
-            {/* Mobile Menu Button */}
             <div className="lg:hidden">
               <button
                 className="text-white"
@@ -174,7 +165,6 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <div
         className={`fixed inset-0 bg-black/60 w-screen h-screen duration-300 ease-in-out z-40 ${
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -183,7 +173,6 @@ const Header: React.FC = () => {
         aria-hidden="true"
       />
 
-      {/* Mobile Navigation Menu */}
       <div
         id="mobile-menu"
         className={`lg:hidden fixed top-[68px] w-full md:w-[320px] h-[calc(100dvh-68px)] bg-olive text-white px-4 md:px-6 py-10 z-40 duration-300 ease-in-out ${
@@ -193,7 +182,6 @@ const Header: React.FC = () => {
         aria-label="Mobile navigation menu"
       >
         <div className="flex flex-col justify-between h-full">
-          {/* Mobile Menu Items */}
           <nav role="navigation" aria-label="Mobile navigation">
             <ul
               className="space-y-4 label-1 font-semibold"
@@ -202,7 +190,7 @@ const Header: React.FC = () => {
               {menus.map((menu, index) => (
                 <li
                   key={`mobile-menu-${index}`}
-                  onClick={() => scrollToSection(menu.id)}
+                  onClick={() => handleScrollToSection(menu.id)}
                   className={`py-3 cursor-pointer ${
                     activeSection === menu.id ? "text-white" : "text-white/50"
                   }`}
@@ -211,7 +199,7 @@ const Header: React.FC = () => {
                   onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
-                      scrollToSection(menu.id);
+                      handleScrollToSection(menu.id);
                     }
                   }}
                   aria-current={activeSection === menu.id ? "page" : undefined}

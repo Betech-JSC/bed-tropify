@@ -42,7 +42,7 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
       className="relative py-12 md:py-16 xl:py-[100px] bg-beige"
     >
       <div className="container">
-        <div className="md:px-[75px] md:space-y-20 space-y-16 xl:space-y-[100px]">
+        <div className="xl:px-[75px] md:space-y-20 space-y-16 xl:space-y-[100px]">
           <div className="md:space-y-6 space-y-4 xl:space-y-8">
             <div className="space-y-6">
               <div className="headline-3 text-brown uppercase">Services</div>
@@ -76,20 +76,24 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
                 spaceBetween={24}
                 slidesPerView={3}
                 loop={true}
-                autoplay={{
-                  delay: 4000,
-                  disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //   delay: 4000,
+                //   disableOnInteraction: false,
+                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
+                    spaceBetween: 10,
                   },
                   480: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
+                    spaceBetween: 16,
                   },
                   1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 18,
+                  },
+                  1280: {
                     slidesPerView: 3,
                     spaceBetween: 24,
                   },
@@ -102,13 +106,13 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
                 ))}
               </Swiper>
               <button
-                className="btn-custom-prev btn-pagination -left-3 md:-left-16"
+                className="btn-custom-prev btn-pagination -left-3 md:-left-6 xl:-left-16"
                 aria-label="button-slider-prev"
               >
                 <Chevron />
               </button>
               <button
-                className="btn-custom-next btn-pagination -right-3 md:-right-16 rotate-180"
+                className="btn-custom-next btn-pagination -right-3 md:-right-6 xl:-right-16 rotate-180"
                 aria-label="button-slider-next"
               >
                 <Chevron />

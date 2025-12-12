@@ -35,6 +35,9 @@ const SectionHero: React.FC<SectionHeroProps> = ({ items }) => {
     }
   };
 
+  // Lấy title hiện tại
+  const currentTitle = items[activeIndex]?.description || "";
+
   return (
     <section id="section-home" className="relative h-screen">
       <Swiper
@@ -64,6 +67,9 @@ const SectionHero: React.FC<SectionHeroProps> = ({ items }) => {
 
       <div className="absolute z-10 bottom-0 left-0 w-full md:p-6 pb-3">
         <div className="container">
+          <div className="display-2 max-md:text-[26px] text-white font-bold md:mb-10 mb-6 xl:mb-16" dangerouslySetInnerHTML={{ __html: currentTitle }}>              
+          </div>
+
           <div className="flex md:flex-row flex-col gap-2 md:gap-6 w-max relative max-md:mx-auto">
             <div className="absolute w-full h-px left-0 bottom-0 bg-white/20 md:block hidden"></div>
             {items.map((itemPaginate, idxPaginate) => (

@@ -1,3 +1,5 @@
+"use client";
+
 import { CardNetwork } from "../cards/CardNetwork";
 
 type NetworkItem = {
@@ -52,10 +54,12 @@ const SectionNetwork: React.FC<SectionNetworkProps> = ({ items, cards }) => {
               })}
             </div>
           </div>
-          <div className="grid grid-cols-2 md:flex md:flex-wrap gap-3 md:gap-6 md:items-start h-full bg-white min-w-full md:min-w-60 max-md:max-w-full">
+          <div className=" w-full max-w-[480px] xl:max-w-[542px]">
+          <div className="grid grid-cols-2 gap-3 md:gap-6 md:items-start h-full">
             {cards.map((itemCard, indexCard) => {
               return <CardNetwork key={indexCard} item={itemCard} />;
             })}
+          </div>
           </div>
         </div>
       </div>

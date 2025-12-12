@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Arrow from "../icons/Arrow";
+import { scrollToContact } from "@/lib/scrollToSection";
 
 interface CardNetworkProps {
   item: {
@@ -15,7 +16,7 @@ interface CardNetworkProps {
 
 export function CardNetwork({ item }: CardNetworkProps) {
   return (
-    <article className="relative w-full md:w-[259px] min-h-[250px] md:min-h-[334px] rounded-[20px] md:rounded-[32px] overflow-hidden group">
+    <article className="relative w-full min-h-[250px] md:min-h-[334px] rounded-[20px] md:rounded-[32px] overflow-hidden group">
       <div className="absolute inset-0">
         <Image
           src={item.image?.url}
@@ -34,7 +35,7 @@ export function CardNetwork({ item }: CardNetworkProps) {
             )}
             {item.description && <p className="body-1">{item.description}</p>}
           </div>
-          <button className="size-11 rounded-full flex items-center justify-center bg-white text-olive lg:group-hover:opacity-100 opacity-0 duration-300 ease-in-out cursor-pointer">
+          <button className="size-11 rounded-full flex items-center justify-center bg-white text-olive lg:group-hover:opacity-100 opacity-0 duration-300 ease-in-out cursor-pointer" onClick={() => scrollToContact()}>
             <Arrow />
           </button>
         </div>
