@@ -2,26 +2,28 @@
 
 import Logo from "../logo";
 import Link from "next/link";
-import { scrollToContact } from "@/lib/scrollToSection";
-
+import { scrollToContact, scrollToSection } from "@/lib/scrollToSection";
 
 const Footer: React.FC = () => {
   const servicesFooter = [
     {
       title: "Tailored sourcing & trading",
+      id: "section-what-we-do"
     },
     {
       title: "Corporate services",
+      id: "section-what-we-do"
     },
     {
       title: "Business matching",
+      id: "section-what-we-do"
     },
   ];
 
   return (
     <footer className="bg-beige pb-5">
       <div className="container">
-        <div className="md:px-[75px]">
+        <div className="xl:px-[75px]">
           <div className="py-20 flex md:flex-row flex-col md:space-y-0 space-y-8 items-start justify-between">
             <Link
               href="/"
@@ -38,7 +40,7 @@ const Footer: React.FC = () => {
                   </h3>
                   <ul className="space-y-3 body-1 text-brown uppercase">
                     {servicesFooter.map((itemService, indexService) => (
-                      <li key={indexService}>{itemService.title}</li>
+                      <li className="cursor-pointer lg:hover:text-olive duration-300 ease-in-out" key={indexService} onClick={() => scrollToSection(itemService.id)}>{itemService.title}</li>
                     ))}
                   </ul>
                 </div>
@@ -48,7 +50,7 @@ const Footer: React.FC = () => {
                       About
                     </h3>
                     <ul className="space-y-3 body-1 text-brown uppercase">
-                      <li>Who we are</li>
+                      <li className="cursor-pointer lg:hover:text-olive duration-300 ease-in-out" onClick={() => scrollToSection("section-about-us")}>Who we are</li>
                     </ul>
                   </div>
                   <button className="btn btn-primary max-md:w-full" onClick={() => scrollToContact()}>Contact us</button>

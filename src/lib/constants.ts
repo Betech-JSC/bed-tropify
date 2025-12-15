@@ -1,9 +1,18 @@
-import { title } from "process";
-
 export const HERO_SLIDERS = [
   {
     image: {
-      url: "/images/demo/image-hero-1.jpg",
+      url: "/images/demo/image-hero-2.jpg",
+      alt: "image sourcing & trading",
+    },
+    title: "Natural Powders",
+    description: `
+      Organic, natural powders for F&B manufacturing and HORECA with Halal certified ISO 2200, ISO 9001, HACCP. <br/> 
+      Coffee and Tea Powder (matcha, coffee, jasmine powder) Fruit Powders
+    `,
+  },
+  {
+    image: {
+      url: "/images/demo/image-hero-2.jpg",
       alt: "image sourcing & trading",
     },
     title: "Sourcing & Trading",
@@ -25,7 +34,7 @@ export const HERO_SLIDERS = [
   },
   {
     image: {
-      url: "/images/demo/image-hero-1.jpg",
+      url: "/images/demo/image-hero-2.jpg",
       alt: "image business connect",
     },
     title: "Business connect",

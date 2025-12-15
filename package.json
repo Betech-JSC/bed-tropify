@@ -7,7 +7,9 @@
     "build": "next build",
     "build:static": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:smtp": "node scripts/test-smtp-direct.js",
+    "test:api": "node scripts/test-smtp-api.js"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -16,6 +18,7 @@
     "gsap": "^3.13.0",
     "next": "16.0.7",
     "next-intl": "^4.1.0",
+    "nodemailer": "^7.0.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
@@ -27,6 +30,7 @@
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^20",
+    "@types/nodemailer": "^7.0.4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
