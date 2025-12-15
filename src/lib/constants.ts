@@ -63,6 +63,15 @@ export const NETWORKS = [
 export const WHAT_WE_DO = [
   {
     image: {
+      url: "/images/demo/image-wwd-3.jpg",
+      alt: "image natural powders",
+    },
+    title: "Natural powders",
+    description:
+      "Organic, natural powders for F&B manufacturing and HORECA with Halal certified ISO 2200, ISO 9001, HACCP. Coffee and Tea Powder (matcha, coffee, jasmine powder) Fruit Powders",
+  },
+  {
+    image: {
       url: "/images/demo/image-wwd-1.jpg",
       alt: "image frozen tropical fruits",
     },
@@ -78,15 +87,6 @@ export const WHAT_WE_DO = [
     title: "Premium coffee",
     description:
       "We supply high-quality, traceable Arabica and Robusta coffee sourced from reputabl partners committed to ethical and sustainable cultivation. Our service includes origin selection, quality check, contract negotiation, and global logistics.",
-  },
-  {
-    image: {
-      url: "/images/demo/image-wwd-3.jpg",
-      alt: "image wooden & recycled furniture",
-    },
-    title: "Wooden & recycled furniture",
-    description:
-      "High-quality wooden furniture and recycled home decor from skilled manufacturers and suppliers, using responsible, compliant production processes. Product range: Indoor & Outdoor Furniture, Home decor",
   },
   {
     image: {
