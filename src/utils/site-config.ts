@@ -7,11 +7,11 @@ const baseUrl = "https://bed-tropify.onrender.com";
 export const siteConfig = {
   title: {
     vi: "Tropify là một thương hiệu nông sản hữu cơ",
-    en: "Tropify is an organic agricultural brand",    
+    en: "Tropify is your business solution partner",    
   },
   description: {
     vi: "Tropify là một thương hiệu nông sản hữu cơ từ vùng Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, chuyển thẳng từ nông trại đến tay người tiêu dùng để đảm bảo chất lượng tốt nhất, với mục tiêu mang đến sự tươi mới và chất lượng vượt trội.",
-    en: "Tropify is an organic agricultural brand from the Andalusia region of Spain, focused on providing fresh, sustainably grown fruits delivered straight from the farm to consumers to ensure the highest quality, with the goal of bringing exceptional freshness and superior quality.",
+    en: "Tropify is your business solution partner. We connect buyers with quality tropical commodities responsibly sourced from Southeast Asia and beyond. We believe in bridging and optimizing connections.",
   },
   siteName: "Tropify",
   url: baseUrl || process.env.NEXT_PUBLIC_BASE_URL || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"),
@@ -37,7 +37,7 @@ export const siteConfig = {
       },
       description: {
         vi: "Tropify là một thương hiệu nông sản hữu cơ từ vùng Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, chuyển thẳng từ nông trại đến tay người tiêu dùng để đảm bảo chất lượng tốt nhất, với mục tiêu mang đến sự tươi mới và chất lượng vượt trội.",
-        en: "Tropify is an organic agricultural brand from the Andalusia region of Spain, focused on providing fresh, sustainably grown fruits delivered straight from the farm to consumers to ensure the highest quality, with the goal of bringing exceptional freshness and superior quality.",
+        en: "Tropify is your business solution partner. We connect buyers with quality tropical commodities responsibly sourced from Southeast Asia and beyond. We believe in bridging and optimizing connections.",
       },
     },
     about: {
@@ -47,7 +47,7 @@ export const siteConfig = {
       },
       description: {
         vi: "Tropify là một thương hiệu nông sản hữu cơ từ vùng Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, chuyển thẳng từ nông trại đến tay người tiêu dùng để đảm bảo chất lượng tốt nhất, với mục tiêu mang đến sự tươi mới và chất lượng vượt trội.",
-        en: "Tropify is an organic agricultural brand from the Andalusia region of Spain, focused on providing fresh, sustainably grown fruits delivered straight from the farm to consumers to ensure the highest quality, with the goal of bringing exceptional freshness and superior quality.",
+        en: "Tropify is your business solution partner. We connect buyers with quality tropical commodities responsibly sourced from Southeast Asia and beyond. We believe in bridging and optimizing connections.Tropify is your business solution partner. We connect buyers with quality tropical commodities responsibly sourced from Southeast Asia and beyond. We believe in bridging and optimizing connections.",
       },
     },
     demo: {
@@ -57,7 +57,7 @@ export const siteConfig = {
       },
       description: {
         vi: "Tropify là một thương hiệu nông sản hữu cơ từ vùng Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, chuyển thẳng từ nông trại đến tay người tiêu dùng để đảm bảo chất lượng tốt nhất, với mục tiêu mang đến sự tươi mới và chất lượng vượt trội.",
-        en: "Tropify is an organic agricultural brand from the Andalusia region of Spain, focused on providing fresh, sustainably grown fruits delivered straight from the farm to consumers to ensure the highest quality, with the goal of bringing exceptional freshness and superior quality.",
+        en: "Tropify is your business solution partner. We connect buyers with quality tropical commodities responsibly sourced from Southeast Asia and beyond. We believe in bridging and optimizing connections.Tropify is your business solution partner. We connect buyers with quality tropical commodities responsibly sourced from Southeast Asia and beyond. We believe in bridging and optimizing connections.",
       },
     },
   },
