@@ -16,9 +16,9 @@ export const HERO_SLIDERS = [
       alt: "image sourcing & trading",
     },
     title: "Sourcing & Trading",
+    tagline: "Connecting businesses.",
     description: `
-      Your business solution partner in <br/>
-      Southeast Asia and beyond.
+      Your business solution in <br/> Vietnam, Indonesia, and beyond
     `,
   },
   {
@@ -27,6 +27,7 @@ export const HERO_SLIDERS = [
       alt: "image operations & financial support services",
     },
     title: "Operations & Financial support services",
+    tagline: "Delivering tropical supply.",
     description: `
       Your sourcing partner in <br/>
       Vietnam and Indonesia       
@@ -38,9 +39,8 @@ export const HERO_SLIDERS = [
       alt: "image business connect",
     },
     title: "Business connect",
+    tagline: "Connecting business. Delivering tropical supply..",
     description: `
-      Connecting business. <br/> 
-      Delivering tropical supply.   
     `,
   },
 ];
@@ -131,12 +131,16 @@ export const CONTACTS = [
     title: "Jakarta",
     email: "tropify@gmail.com",
     phone: "0987 654 321",
+    address: "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    addressLink: "",
     note: "",
   },
   {
     title: "Ho Chi Minh City",
     email: "tropify@gmail.com",
     phone: "0987 654 321",
+    address: "lorem ipsum dolor sit amet consectetur adipiscing elit",
+    addressLink: "",
     note: "(whatsapp, WECHAT)",
   },
 ];

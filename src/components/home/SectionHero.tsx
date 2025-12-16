@@ -9,6 +9,7 @@ type SliderItem = {
     alt?: string;
   };
   title?: string;
+  tagline?: string;
   description?: string;
 };
 
@@ -25,6 +26,7 @@ const SectionHero: React.FC<SectionHeroProps> = ({ items }) => {
 
   // Lấy title và image hiện tại
   const currentTitle = items[activeIndex]?.description || "";
+  const currentTagline = items[activeIndex]?.tagline || "";
   const currentImage = items[activeIndex]?.image?.url || "/images/demo/image-hero-2.webp";
   const currentImageAlt = items[activeIndex]?.image?.alt || items[activeIndex]?.title || "Hero image";
 
@@ -42,10 +44,13 @@ const SectionHero: React.FC<SectionHeroProps> = ({ items }) => {
 
       <div className="absolute z-10 bottom-0 left-0 w-full md:p-6 pb-3">
         <div className="container">
+          <div className="md:mb-10 mb-6 xl:mb-16 space-y-3 md:space-y-4 xl:space-y-6">
           <div
-            className="display-2 max-md:text-[26px] text-white font-bold md:mb-10 mb-6 xl:mb-16"
+            className="display-2 max-md:text-[26px] text-white font-bold"
             dangerouslySetInnerHTML={{ __html: currentTitle }}
           ></div>
+          <div className="body-0 font-medium uppercase text-white">{ currentTagline }</div>
+          </div>
 
           <div className="flex md:flex-row flex-col gap-2 xl:gap-6 w-max relative max-md:mx-auto">
             <div className="absolute w-full h-px left-0 bottom-0 bg-white/20 md:block hidden"></div>

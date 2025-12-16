@@ -2,11 +2,14 @@ import Image from "next/image";
 import Mail from "../icons/Mail";
 import Phone from "../icons/Phone";
 import FormAdvise from "../ui/form-advise";
+import Address from "../icons/Address";
 
 type ContactItem = {
   title?: string;
   email?: string;
   phone?: string;
+  address?: string;
+  addressLink?: string;
   note?: string;
 };
 
@@ -51,6 +54,14 @@ const SectionContact: React.FC<SectionWhatWeDoProps> = ({ items }) => {
                       <Phone />
                       <span>
                         <a href={`tel:${itemInfo.phone}`} className="text-gray-700 lg:hover:text-olive duration-300 ease-in-out">{itemInfo.phone}</a>
+                      </span>
+                    </div>
+                    <div className="flex items-start gap-3 body-1">
+                      <div>
+                        <Address />
+                      </div>
+                      <span className="flex-1 w-full">
+                        <a href={itemInfo.addressLink || ""} className="text-gray-700 lg:hover:text-olive duration-300 ease-in-out">{itemInfo.address}</a>
                       </span>
                     </div>
                   </div>
