@@ -45,7 +45,7 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
         <div className="xl:px-[75px] md:space-y-20 space-y-16 xl:space-y-[100px]">
           <div className="md:space-y-6 space-y-4 xl:space-y-8">
             <div className="space-y-6">
-              <div className="headline-3 text-brown uppercase">Services</div>
+              <div className="headline-3 text-brown uppercase">What we do</div>
               <div className="flex md:flex-row flex-col items-start gap-4 md:gap-8">
                 <div className="max-w-[480px] w-full">
                   <h2 className="display-2 font-bold text-brown">
@@ -57,11 +57,6 @@ const SectionWhatWeDo: React.FC<SectionWhatWeDoProps> = ({
                     We research, vet, and select manufacturers or vendors that
                     meet your quality, price, and compliance requirements.
                   </p>
-                  <ul className="list-disc pl-5">
-                    <li>Frozen tropical fruits</li>
-                    <li>Coffee</li>
-                    <li>Wooden Furniture</li>
-                  </ul>
                 </div>
               </div>
             </div>
