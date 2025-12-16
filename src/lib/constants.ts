@@ -17,8 +17,8 @@ export const HERO_SLIDERS = [
     },
     title: "Sourcing & Trading",
     description: `
-      Your business solution in <br/>
-      Vietnam, Indonesia, and beyond
+      Your business solution partner in <br/>
+      Southeast Asia and beyond.
     `,
   },
   {
@@ -39,8 +39,8 @@ export const HERO_SLIDERS = [
     },
     title: "Business connect",
     description: `
-      Your sourcing partner in <br/>
-      Vietnam and Indonesia       
+      Connecting business. <br/> 
+      Delivering tropical supply.   
     `,
   },
 ];
