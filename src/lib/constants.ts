@@ -18,7 +18,7 @@ export const HERO_SLIDERS = [
     title: "Sourcing & Trading",
     tagline: "Your business solution partner in Southeast Asia and beyond.",
     description: `
-      Connecting businesses <br/> Delivering tropical supply
+      Connecting businesses. <br/> Delivering tropical supply.
     `,
   },
   {
@@ -29,7 +29,7 @@ export const HERO_SLIDERS = [
     title: "Operations & Financial support services",
     tagline: "Your business solution partner in Southeast Asia and beyond.",
     description: `
-      Connecting businesses <br/> Delivering tropical supply
+      Connecting businesses. <br/> Delivering tropical supply.
     `,
   },
   {
@@ -40,7 +40,7 @@ export const HERO_SLIDERS = [
     title: "Business connect",
     tagline: "Your business solution partner in Southeast Asia and beyond.",
     description: `
-      Connecting businesses <br/> Delivering tropical supply
+      Connecting businesses. <br/> Delivering tropical supply.
     `,
   },
 ];
