@@ -29,8 +29,7 @@ export const HERO_SLIDERS = [
     title: "Operations & Financial support services",
     tagline: "Delivering tropical supply.",
     description: `
-      Your sourcing partner in <br/>
-      Vietnam and Indonesia       
+      Your business solution in <br/> Vietnam, Indonesia, and beyond
     `,
   },
   {
@@ -41,6 +40,7 @@ export const HERO_SLIDERS = [
     title: "Business connect",
     tagline: "Connecting business. Delivering tropical supply..",
     description: `
+      Your business solution in <br/> Vietnam, Indonesia, and beyond
     `,
   },
 ];
