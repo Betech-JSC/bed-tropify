@@ -16,9 +16,9 @@ export const HERO_SLIDERS = [
       alt: "image sourcing & trading",
     },
     title: "Sourcing & Trading",
-    tagline: "Connecting businesses.",
+    tagline: "Your business solution partner in Southeast Asia and beyond.",
     description: `
-      Your business solution in <br/> Vietnam, Indonesia, and beyond
+      Connecting businesses <br/> Delivering tropical supply
     `,
   },
   {
@@ -27,9 +27,9 @@ export const HERO_SLIDERS = [
       alt: "image operations & financial support services",
     },
     title: "Operations & Financial support services",
-    tagline: "Delivering tropical supply.",
+    tagline: "Your business solution partner in Southeast Asia and beyond.",
     description: `
-      Your business solution in <br/> Vietnam, Indonesia, and beyond
+      Connecting businesses <br/> Delivering tropical supply
     `,
   },
   {
@@ -38,9 +38,9 @@ export const HERO_SLIDERS = [
       alt: "image business connect",
     },
     title: "Business connect",
-    tagline: "Connecting business. Delivering tropical supply..",
+    tagline: "Your business solution partner in Southeast Asia and beyond.",
     description: `
-      Your business solution in <br/> Vietnam, Indonesia, and beyond
+      Connecting businesses <br/> Delivering tropical supply
     `,
   },
 ];
