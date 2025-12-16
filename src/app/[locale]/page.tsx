@@ -26,7 +26,7 @@ export default function Home() {
       title: "Database",
       description: "of local suppliers in Vietnam and Indonesia",
       image: {
-        url: "/images/demo/image-network-1.jpg",
+        url: "/images/demo/image-network-1.webp",
         alt: "image database",
       },
     },
@@ -35,7 +35,7 @@ export default function Home() {
       title: "Local expert",
       description: "networks, associations",
       image: {
-        url: "/images/demo/image-network-2.jpg",
+        url: "/images/demo/image-network-2.webp",
         alt: "image local expert",
       },
     },

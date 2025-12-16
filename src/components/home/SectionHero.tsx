@@ -25,7 +25,7 @@ const SectionHero: React.FC<SectionHeroProps> = ({ items }) => {
 
   // Lấy title và image hiện tại
   const currentTitle = items[activeIndex]?.description || "";
-  const currentImage = items[activeIndex]?.image?.url || "/images/demo/image-hero-2.jpg";
+  const currentImage = items[activeIndex]?.image?.url || "/images/demo/image-hero-2.webp";
   const currentImageAlt = items[activeIndex]?.image?.alt || items[activeIndex]?.title || "Hero image";
 
   return (

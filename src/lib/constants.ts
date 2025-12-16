@@ -1,7 +1,7 @@
 export const HERO_SLIDERS = [
   {
     image: {
-      url: "/images/demo/image-hero-2.jpg",
+      url: "/images/demo/image-hero-2.webp",
       alt: "image sourcing & trading",
     },
     title: "Natural Powders",
@@ -12,7 +12,7 @@ export const HERO_SLIDERS = [
   },
   {
     image: {
-      url: "/images/demo/image-hero-2.jpg",
+      url: "/images/demo/image-hero-2.webp",
       alt: "image sourcing & trading",
     },
     title: "Sourcing & Trading",
@@ -23,7 +23,7 @@ export const HERO_SLIDERS = [
   },
   {
     image: {
-      url: "/images/demo/image-hero-2.jpg",
+      url: "/images/demo/image-hero-2.webp",
       alt: "image operations & financial support services",
     },
     title: "Operations & Financial support services",
@@ -34,7 +34,7 @@ export const HERO_SLIDERS = [
   },
   {
     image: {
-      url: "/images/demo/image-hero-2.jpg",
+      url: "/images/demo/image-hero-2.webp",
       alt: "image business connect",
     },
     title: "Business connect",
@@ -63,7 +63,7 @@ export const NETWORKS = [
 export const WHAT_WE_DO = [
   {
     image: {
-      url: "/images/demo/image-wwd-3.jpg",
+      url: "/images/demo/image-wwd-0.webp",
       alt: "image natural powders",
     },
     title: "Natural powders",
@@ -72,7 +72,7 @@ export const WHAT_WE_DO = [
   },
   {
     image: {
-      url: "/images/demo/image-wwd-1.jpg",
+      url: "/images/demo/image-wwd-1.webp",
       alt: "image frozen tropical fruits",
     },
     title: "Frozen tropical fruits",
@@ -81,7 +81,7 @@ export const WHAT_WE_DO = [
   },
   {
     image: {
-      url: "/images/demo/image-wwd-2.jpg",
+      url: "/images/demo/image-wwd-2.webp",
       alt: "image premium coffee",
     },
     title: "Premium coffee",
@@ -90,7 +90,7 @@ export const WHAT_WE_DO = [
   },
   {
     image: {
-      url: "/images/demo/image-wwd-3.jpg",
+      url: "/images/demo/image-wwd-3.webp",
       alt: "image wooden & recycled furniture",
     },
     title: "Wooden & recycled furniture",
@@ -102,7 +102,7 @@ export const WHAT_WE_DO = [
 export const SERVICES = [
   {
     image: {
-      url: "/images/demo/image-service-1.jpg",
+      url: "/images/demo/image-service-1.webp",
       alt: "image operations & financial support services",
     },
     title: "Operations & financial support services",
@@ -114,7 +114,7 @@ export const SERVICES = [
   },
   {
     image: {
-      url: "/images/demo/image-service-2.jpg",
+      url: "/images/demo/image-service-2.webp",
       alt: "image business connect",
     },
     title: "Business connect",

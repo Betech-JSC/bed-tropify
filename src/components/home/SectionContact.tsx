@@ -19,7 +19,7 @@ const SectionContact: React.FC<SectionWhatWeDoProps> = ({ items }) => {
     <section id="section-contact" className="relative">
       <div className="absolute inset-0">
         <Image
-          src="/images/demo/image-contact.jpg"
+          src="/images/demo/image-contact.webp"
           alt="background contact"
           className="w-full h-full object-cover"
           fill
