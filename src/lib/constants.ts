@@ -129,7 +129,7 @@ export const SERVICES = [
 export const CONTACTS = [
   {
     title: "Jakarta",
-    email: "tropify@gmail.com",
+    email: "contact@tropify.asia",
     phone: "0987 654 321",
     address: "lorem ipsum dolor sit amet consectetur adipiscing elit",
     addressLink: "",
@@ -137,7 +137,7 @@ export const CONTACTS = [
   },
   {
     title: "Ho Chi Minh City",
-    email: "tropify@gmail.com",
+    email: "contact@tropify.asia",
     phone: "0987 654 321",
     address: "lorem ipsum dolor sit amet consectetur adipiscing elit",
     addressLink: "",

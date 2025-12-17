@@ -32,16 +32,16 @@ export function createDefaultSchemas(
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+84-826-966-913",
-      email: "dev.thanhcao@gmail.com",
+      telephone: "",
+      email: "contact@tropify.asia",
       contactType: "customer service",
       areaServed: "VN",
       availableLanguage: ["Vietnamese", "English"]
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "55/30A Nguyen Thuong Hien Street, Ward 5",
-      addressLocality: "Binh Thanh District",
+      streetAddress: "", // Update address
+      addressLocality: "", // Update locality district
       addressRegion: "Ho Chi Minh City",
       addressCountry: "VN"
     }
@@ -50,33 +50,27 @@ export function createDefaultSchemas(
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Cao Trung Thanh",
-    jobTitle: "Frontend Developer",
+    name: "Tropify Asia",
+    jobTitle: "Tropify Asia",
     description: siteConfig.description[currentLocale],
     url: siteConfig.url,
     image: `${siteConfig.url}/images/home/image-avatar.webp`,
     sameAs: [
       "https://www.linkedin.com/in/trung-thanh-cao-30813b168"
     ],
-    email: "dev.thanhcao@gmail.com",
-    telephone: "+84-826-966-913",
+    email: "contact@tropify.asia",
+    telephone: "",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "55/30A Nguyen Thuong Hien Street, Ward 5",
-      addressLocality: "Binh Thanh District",
+      streetAddress: "", // Update address
+      addressLocality: "", // Update locality district
       addressRegion: "Ho Chi Minh City",
       addressCountry: "VN"
     },
     knowsAbout: [
-      "Frontend Development",
-      "React",
-      "Vue.js",
-      "Next.js",
-      "Nuxt.js",
-      "TypeScript",
-      "JavaScript",
-      "Web Development",
-      "UI/UX Design"
+      "Sourcing & Trading",
+      "Operations & Financial support services",
+      "Business connect"
     ],
     worksFor: {
       "@type": "Organization",
