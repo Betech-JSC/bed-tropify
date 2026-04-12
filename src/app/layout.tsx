@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     default: "Tropify",
     template: "%s | Tropify"
   },
-  description: "Tropify là một thương hiệu nông sản hữu cơ từ Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, và giao trực tiếp từ nông trại đến tay người tiêu dùng, đảm bảo chất lượng cao nhất và thời gian vận chuyển ngắn nhất.",
+  description: "Tropify Asia is a Southeast Asia - focused sourcing and business solutions partner that connects global buyers with etrusted suppliers. We specialize in coffee, fruit powders, frozen fruits, while also offering services such as supplier vetting, business matching, and local operational support.",
   keywords: [
     "Tropify",
   ],
@@ -27,10 +27,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: '', // Thay bằng URL thực tế của bạn
+    url: 'https://tropify.asia',
     siteName: 'Tropify',
     title: 'Tropify',
-    description: 'Tropify là một thương hiệu nông sản hữu cơ từ Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, và giao trực tiếp từ nông trại đến tay người tiêu dùng, đảm bảo chất lượng cao nhất và thời gian vận chuyển ngắn nhất.',
+    description: 'Tropify Asia is a Southeast Asia - focused sourcing and business solutions partner that connects global buyers with etrusted suppliers. We specialize in coffee, fruit powders, frozen fruits, while also offering services such as supplier vetting, business matching, and local operational support.',
     images: [
       {
         url: '/cover.jpg',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Tropify',
-    description: 'Tropify là một thương hiệu nông sản hữu cơ từ Andalusia, Tây Ban Nha, tập trung vào việc cung cấp trái cây tươi ngon, được trồng bền vững, và giao trực tiếp từ nông trại đến tay người tiêu dùng, đảm bảo chất lượng cao nhất và thời gian vận chuyển ngắn nhất.',
+    description: 'Tropify Asia is a Southeast Asia - focused sourcing and business solutions partner that connects global buyers with etrusted suppliers. We specialize in coffee, fruit powders, frozen fruits, while also offering services such as supplier vetting, business matching, and local operational support.',
     images: ['/cover.jpg'],
   },
   verification: {
