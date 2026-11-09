@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node init && next dev --turbopack",
-    "build": "node init && next build",
-    "build:static": "node init && next build && next export",
-    "start": "node init && next start",
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "build:static": "next build && next export",
+    "start": "next start",
     "lint": "next lint",
     "test:smtp": "node scripts/test-smtp-direct.js",
     "test:api": "node scripts/test-smtp-api.js"

@@ -27,3 +27,5 @@ node_modules/
 .env.production.local
 
 config.bat
+/.vscode
+.env
